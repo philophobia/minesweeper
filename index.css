@@ -1,0 +1,103 @@
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.game {
+  width: auto;
+  height: auto;
+  margin-left: 20px;
+  display: inline-block;
+}
+
+#main {
+  float: left;
+  margin-bottom: 30px;
+}
+
+#main td {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 10px;
+  background-color: gainsboro;
+  color: black;
+  border: 1px outset white;
+  cursor: pointer;
+}
+
+#main td:hover {
+  background-color: ghostwhite;
+}
+
+.mark {
+  background-image: url("flag.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+.boom {
+  background-image: url("mine.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: 10;
+}
+
+.buttons {
+  width: fit-content;
+  margin-left: 30px;
+  background-color: darkseagreen;
+}
+
+.buttons button {
+  width: 120px;
+  height: 38px;
+  margin: 15px;
+  font-size: 1.1rem;
+  background-image: url("btn.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  border: none;
+  cursor: pointer;
+  float: left;
+}
+
+.layui-form {
+  width: 200px;
+  margin: 15px 0px;
+  float: left;
+}
+
+.layui-form-select dl dd.layui-this {
+  background-color: #ff4a4a !important;
+}
+
+.container {
+  width: 420px;
+  height: fit-content;
+  float: left;
+}
+
+.description {
+  margin-bottom: 20px;
+  margin-top: 70px;
+}
+
+#remaining,
+#timing {
+  width: 140px;
+  font-size: 1.3rem;
+  float: left;
+}
+
+#remaining {
+  margin: 22px 10px;
+}
+
+#timing {
+  margin: 19px 10px;
+}
