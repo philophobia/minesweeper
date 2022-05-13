@@ -11,46 +11,48 @@
     </head>
 
     <body>
-        <div class="buttons">
-            <button onclick="init(10)">10 × 10</button>
-            <button onclick="init(15)">15 × 15</button>
-            <button onclick="init(20)">20 × 20</button>
-            <!--<button onclick="customSize()">我想自定义</button>-->
-            <form class="layui-form" action="">
-                <div class="layui-form-item">
-                    <label class="layui-form-label">选择难度：</label>
-                    <div class="layui-input-block">
-                        <select id="difficulty">
-                            <option value="2">10</option>
-                            <option value="3">9</option>
-                            <option value="4">8</option>
-                            <option value="5">7</option>
-                            <option value="6">6</option>
-                            <option value="7" selected="selected">5</option>
-                            <option value="8">4</option>
-                            <option value="9">3</option>
-                            <option value="10">2</option>
-                            <option value="11">1</option>
-                        </select>
+        <div style="display: inline-block;">
+            <div class="buttons">
+                <button onclick="init(10)">10 × 10</button>
+                <button onclick="init(15)">15 × 15</button>
+                <button onclick="init(20)">20 × 20</button>
+                <button onclick="customSize()">我想自定义</button>
+                <form class="layui-form" action="">
+                    <div class="layui-form-item">
+                        <label class="layui-form-label">选择难度：</label>
+                        <div class="layui-input-block">
+                            <select id="difficulty">
+                                <option value="2">10</option>
+                                <option value="3">9</option>
+                                <option value="4">8</option>
+                                <option value="5">7</option>
+                                <option value="6">6</option>
+                                <option value="7" selected="selected">5</option>
+                                <option value="8">4</option>
+                                <option value="9">3</option>
+                                <option value="10">2</option>
+                                <option value="11">1</option>
+                            </select>
+                        </div>
                     </div>
+                </form>
+            </div>
+            <div class="container">
+                <div class="description">
+                    说明：<br />
+                    1、请先选择难度，数字越大代表难度越大。<br />
+                    2、按下区域大小的按钮开始游戏，同时开始计时。<br />
+                    3、最多保存十次计时，离开页面会清除记录。<br />
                 </div>
-            </form>
-        </div>
-        <div class="container">
-            <!--<div class="description">
-                说明：<br />
-                1、请先选择难度，数字越大代表难度越大。<br />
-                2、按下按钮开始游戏，同时开始计时。<br />
-                3、最多保存十次计时，关闭网页/窗口后清除记录。<br />
-            </div>-->
-            <div id="remaining">
-                剩余地雷：0
-            </div>
-            <div id="timing">
-                用时：-- : --
-            </div>
-            <div style="width: 80px;float: left;margin: 15px 10px;">
-                <button onclick="viewRecords()" class="layui-btn layui-btn-radius layui-btn-danger">看记录</button>
+                <div id="remaining">
+                    剩余地雷：0
+                </div>
+                <div id="timing">
+                    用时：-- : --
+                </div>
+                <div style="width: 80px;float: left;margin: 15px 10px;">
+                    <button onclick="viewRecords()" class="layui-btn layui-btn-radius layui-btn-danger">看记录</button>
+                </div>
             </div>
         </div>
         <div class="game">
