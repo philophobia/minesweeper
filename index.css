@@ -55,8 +55,6 @@ body {
 .buttons button {
   width: 120px;
   height: 40px;
-  margin-left: 80px;
-  margin-top: 30px;
   font-size: 1.1rem;
   background-color: transparent;
   background-image: url("btn.png");
@@ -85,8 +83,7 @@ body {
 }
 
 .description {
-  margin-bottom: 20px;
-  margin-top: 50px;
+  margin: 20px 20px;
   font-size: 1.2em;
   display: block;
 }
