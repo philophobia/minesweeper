@@ -47,7 +47,7 @@ body {
 }
 
 .buttons {
-  width: 420px;
+  width: 260px;
   margin-left: 30px;
   display: block;
 }
@@ -55,6 +55,7 @@ body {
 .buttons button {
   width: 120px;
   height: 40px;
+  margin: 15px 0;
   font-size: 1.1rem;
   background-color: transparent;
   background-image: url("btn.png");
@@ -68,7 +69,7 @@ body {
 
 .layui-form {
   width: 200px;
-  margin: 15px 20px;
+  margin: 20px 0;
   display: block;
 }
 
@@ -96,9 +97,9 @@ body {
 }
 
 #remaining {
-  margin: 22px 10px;
+  margin: 24px 10px;
 }
 
 #timing {
-  margin: 19px 10px;
+  margin: 20px 10px;
 }
